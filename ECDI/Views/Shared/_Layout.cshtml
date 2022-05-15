@@ -4,27 +4,28 @@
     <title>Expert Cyber Defence Intelligence</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,300">
-    <link type="text/css" rel="stylesheet" href="~/assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/font/font-icon/font-svg/css/Glyphter.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/animate/animate.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/bootstrap-3.3.5/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/owl-carousel-2.0/assets/owl.carousel.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/selectbox/css/jquery.selectbox.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/fancybox/css/jquery.fancybox.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/fancybox/css/jquery.fancybox-buttons.css">
-    <link type="text/css" rel="stylesheet" href="~/assets/libs/media-element/build/mediaelementplayer.min.css">
-    <link type="text/css" rel="stylesheet" href="#" id="color-skins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,300">
+    <link rel="stylesheet" href="~/assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/assets/font/font-icon/font-svg/css/Glyphter.css" />
+    <link rel="stylesheet" href="~/assets/libs/animate/animate.css" />
+    <link rel="stylesheet" href="~/assets/libs/bootstrap-3.3.5/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/assets/libs/owl-carousel-2.0/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="~/assets/libs/selectbox/css/jquery.selectbox.css" />
+    <link rel="stylesheet" href="~/assets/libs/fancybox/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="~/assets/libs/fancybox/css/jquery.fancybox-buttons.css" />
+    <link rel="stylesheet" href="~/assets/libs/media-element/build/mediaelementplayer.min.css" />
+    <link rel="stylesheet" href="#" id="color-skins" />
     <script src="~/assets/libs/jquery/jquery-2.1.4.min.js"></script>
     <script src="~/assets/libs/js-cookie/js.cookie.js"></script>
     <script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
         $('#color-skins').attr('href', 'assets/css/' + Cookies.get('color-skin') + '.css');
     } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-        $('#color-skins').attr('href', 'assets/css/color-1.css');
+        $('#color-skins').attr('href', '/assets/css/color-1.css');
     }``
     </script>
 </head>
 <body>
+@if (ViewBag.dontShow == null) {
 <header>
     <div class="header-topbar">
         <div class="container">
@@ -42,7 +43,7 @@
         <div class="container">
             <div class="header-main-wrapper">
                 <div class="navbar-heade">
-                    <div class="logo pull-left"><a href="index-2.html" class="header-logo"><img src="assets/images/logo-color-1.png" alt=""/></a></div>
+                    <div class="logo pull-left"><a href="index-2.html" class="header-logo"><img src="~/assets/images/logo-color-1.png" alt=""/></a></div>
                     <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <nav class="navigation collapse navbar-collapse pull-right">
@@ -102,10 +103,11 @@
         </div>
     </div>
 </header>
+}
 <!-- WRAPPER-->
-
-    @RenderBody()
+@RenderBody()
 <!-- FOOTER-->
+@if (ViewBag.dontShow == null) {
 <footer>
     <div class="footer-top">
         <div class="container">
@@ -178,7 +180,7 @@
                             <div class="gallery-widget widget">
                                 <div class="title-widget">GALLERY</div>
                                 <div class="content-widget">
-                                    <div class="gallery-list"><a href="#" class="thumb"><img src="assets/images/gallery/gallery-01.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-02.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-03.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-04.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-05.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-06.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-07.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="assets/images/gallery/gallery-08.jpg"
+                                    <div class="gallery-list"><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-01.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-02.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-03.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-04.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-05.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-06.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-07.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb"><img src="~/assets/images/gallery/gallery-08.jpg"
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         alt="" class="img-responsive"/></a></div>
                                     <div class="clearfix"></div>
                                     <a href="#" class="view-more">View more&nbsp;<i class="fa fa-angle-double-right mls"></i></a></div>
@@ -239,15 +241,18 @@
             <li data-color="color-10"></li>
         </ul>
     </div>
-</div>
-<div class="body-2 loading">
+        </div>
+    }
+    <div class="body-2 loading">
     <div class="dots-loader"></div>
 </div>
-<script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+<script>
+if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
     $('.logo .header-logo img').attr('src', 'assets/images/logo-' + Cookies.get('color-skin') + '.png');
 } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-    $('.logo .header-logo img').attr('src', 'assets/images/logo-color-1.png');
-}</script>
+    $('.logo .header-logo img').attr('src', '/assets/images/logo-color-1.png');
+}
+</script>
 <script src="~/assets/libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="~/assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
 <script src="~/assets/libs/owl-carousel-2.0/owl.carousel.min.js"></script>
