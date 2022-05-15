@@ -23,5 +23,12 @@ namespace ECDI.Controllers {
         public IActionResult ContactUs () {
             return View();
         }
+        public IActionResult Error404 () {
+            ViewBag.dontShow = true;
+            return View();
+        }
+        public IActionResult Gallery () {
+            return View();
+        }
     }
 }
