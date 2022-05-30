@@ -71,5 +71,9 @@ namespace ECDI.Controllers {
         public IActionResult Gallery () {
             return View();
         }
+
+        public IActionResult RealTimeAttacks () {
+            return View();
+        }
     }
 }
