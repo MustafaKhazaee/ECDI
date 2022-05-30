@@ -1,23 +1,35 @@
 ﻿
-<div id="wrapper-content"><!-- PAGE WRAPPER-->
-    <div id="page-wrapper"><!-- MAIN CONTENT-->
-        <div class="main-content"><!-- CONTENT-->
+<div id="wrapper-content">
+    <!-- PAGE WRAPPER-->
+    <div id="page-wrapper">
+        <!-- MAIN CONTENT-->
+        <div class="main-content">
+            <!-- CONTENT-->
             <div class="content">
                 <div class="page-login rlp">
                     <div class="container">
                         <div class="login-wrapper rlp-wrapper">
-                            <div class="login-table rlp-table"><a href="index-2.html"><img src="assets/images/logo-color-1.png" alt="" class="login"/></a>
+                            <div class="login-table rlp-table">
+                                <a href="index-2.html"><img src="assets/images/logo-color-1.png" alt="" class="login" /></a>
 
-                                <div class="login-title rlp-title">login to your edugate.com account!</div>
-                                <div class="login-form bg-w-form rlp-form">
-                                    <div class="row">
-                                        <div class="col-md-12"><label for="regemail" class="control-label form-label">email <span class="highlight">*</span></label><input id="regemail" type="email" placeholder="" class="form-control form-input"/><!--p.help-block Warning !--></div>
-                                        <div class="col-md-12"><label for="regpassword" class="control-label form-label">password <span class="highlight">*</span></label><input id="regpassword" type="password" placeholder="" class="form-control form-input"/><!-- p.help-block Warning !--></div>
+                                <div class="login-title rlp-title">Login To ECDI</div>
+                                <form action="/Home/Login" method="post">
+                                    <div class="login-form bg-w-form rlp-form">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="Username" class="control-label form-label">Username <span class="highlight">*</span></label>
+                                                <input name="Username" id="Username" placeholder="username" class="form-control form-input" /><!--p.help-block Warning !-->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="Password" class="control-label form-label">Password <span class="highlight">*</span></label>
+                                                <input name="Password" id="Password" type="password" placeholder="password" class="form-control form-input" /><!-- p.help-block Warning !-->
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="login-submit">
-                                    <button type="submit" onclick="window.location.href='index-2.html'" class="btn btn-login btn-green"><span>sign in</span></button>
-                                </div>
+                                    <div class="login-submit">
+                                        <button type="submit" class="btn btn-login btn-green"><span>sign in</span></button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

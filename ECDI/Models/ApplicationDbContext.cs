@@ -5,6 +5,5 @@ namespace ECDI.Models {
         public ApplicationDbContext(DbContextOptions options) : base (options) { }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<Photo> Photos { get; set; }
     }
 }
