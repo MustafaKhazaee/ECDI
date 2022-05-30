@@ -35,10 +35,10 @@
                 <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span>+93 78 807 7685</span></a></div>
             </div>
             <div class="topbar-right pull-right">
-                <div class="socials"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="google"><i class="fa fa-google-plus"></i></a><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="blog"><i class="fa fa-rss"></i></a><a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></div>
+                <div class="socials"><a href="https://www.facebook.com/ECDI1/" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="google"><i class="fa fa-google-plus"></i></a><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="blog"><i class="fa fa-rss"></i></a><a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></div>
                 <div class="group-sign-in">
                     <a href="/Home/Login" class="login">login</a>
-                    if (@User?.Identity?.IsAuthenticated) {
+                    @if (User.Identity.IsAuthenticated) {
                         <a href="/Courses/Index" class="register">Management</a>
                     }
                 </div>
