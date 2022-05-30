@@ -7,5 +7,7 @@
         public string? Email { get ; set; }
         public string? Mobile1 { get; set; }
         public string? Mobile2 { get; set; }
+        public byte[]? Photo { get; set; }
+        public string? Facebook { get; set; }
     }
 }

@@ -8,7 +8,12 @@
         public DateTime? CreatedDate { set; get; } = DateTime.Now;
         public DateTime? StartDate { set; get; }
         public DateTime? EndDate { set; get; }
-        public string? Photo { set; get; }
+        public string Type { get; set; }
         public string? Time { get; set; }
+        public string? Length { get; set; }
+        public string? Level { get; set; }
+        public string? YouTubeURL { get; set; }
+        public string? Price { get; set; }
+        public byte[]? Photo { get; set; }
     }
 }
