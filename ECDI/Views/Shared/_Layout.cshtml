@@ -24,6 +24,11 @@
         $('#color-skins').attr('href', '/assets/css/color-1.css');
     }``
     </script>
+    <style>
+        a.main-menu {
+            line-height: 100px !important;
+        }
+    </style>
 </head>
 <body>
 @if (ViewBag.dontShow == null) {
@@ -31,11 +36,17 @@
     <div class="header-topbar">
         <div class="container">
             <div class="topbar-left pull-left">
-                <div class="email"><a href="#"><i class="topbar-icon fa fa-envelope-o"></i><span>hello.shinway@gmail.com</span></a></div>
+                <div class="email"><a href="#"><i class="topbar-icon fa fa-envelope-o"></i><span>Management@ecditech.com</span></a></div>
                 <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span>+93 78 807 7685</span></a></div>
             </div>
             <div class="topbar-right pull-right">
-                <div class="socials"><a href="https://www.facebook.com/ECDI1/" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="google"><i class="fa fa-google-plus"></i></a><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="blog"><i class="fa fa-rss"></i></a><a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/ECDI1/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UChtfH_vkJfThhBGduzmpBWw" class="google"><i class="fa fa-youtube"></i></a>
+                    <a href="https://twitter.com/CyberAcdi" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://t.me/KACDI" class="pinterest"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/76249705/admin/" class="blog"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/ecdi.expert/" class="dribbble"><i class="fa fa-instagram"></i></a></div>
                 <div class="group-sign-in">
                     <a href="/Home/Login" class="login">login</a>
                     @if (User.Identity.IsAuthenticated) {
@@ -45,20 +56,17 @@
             </div>
         </div>
     </div>
-    <div class="header-main homepage-01">
+    <div class="header-main homepage-01"  style="height: 71px;">
         <div class="container">
             <div class="header-main-wrapper">
                 <div class="navbar-heade">
-                    <div class="logo pull-left"><a class="header-logo"><img style="height: 70px;"  src="~/a.jpg" alt=""/></a></div>
+                    <div style="line-height: 67px;" class="logo pull-left"><a class="header-logo"><img style="height: 70px; width: auto;"  src="~/a.jpg" alt=""/></a></div>
                     <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <nav class="navigation collapse navbar-collapse pull-right">
-                    <ul class="nav-links nav navbar-nav">
-                        <li b-c7j36eeidq="" style="margin-right: 137px;" class="dropdown">
-                            <a class="main-menu" style="color: green; font-size: 1.2em;" b-c7j36eeidq="">Expert Cyber Defence Intelligence</a>
-                        </li>
-                        <li><a href="/Home/Index" class="main-menu">Home</a></li>
-                        <li class="dropdown"><a href="javascript:void(0)" class="main-menu">Courses<span class="fa fa-angle-down icons-dropdown"></span></a>
+                    <ul class="nav-links nav navbar-nav" style="line-height: 70px; transform: translateY(-15px)">
+                        <li class="my-style" style="max-height: 20px; "><a href="/Home/Index" class="main-menu">Home</a></li>
+                        <li style="max-height: 20px;" class="dropdown"><a href="javascript:void(0)" class="main-menu">Courses<span class="fa fa-angle-down icons-dropdown"></span></a>
                             <ul class="dropdown-menu edugate-dropdown-menu-1">
                                 <li><a href="/Home/Courses?course=CompTIA Network" class="link-page">CompTIA Network</a></li>
                                 <li><a href="/Home/Courses?course=CCTV" class="link-page">CCTV</a></li>
@@ -67,16 +75,15 @@
                                 <li><a href="/Home/Courses?course=Linux" class="link-page">Linux</a></li>
                                 <li><a href="/Home/Courses?course=Programming" class="link-page">Programming</a></li>
                                 <li><a href="/Home/Courses?course=Web Development" class="link-page">Web Development</a></li>
-                                @*<li><a href="/Home/Courses?course=Mobile Application" class="link-page">Mobile Application (Coming Soon)</a></li>*@
-                                <li><a href="#" class="link-page">Mobile Application (Coming Soon)</a></li>
+                                <li><a href="/Home/Courses?course=Mobile Application" class="link-page">Mobile Application</a></li>
                                 <li><a href="/Home/Courses?course=Web Designing" class="link-page">Web Designing</a></li>
                                 <li><a href="/Home/Courses?course=Full Stack Development" class="link-page">Full Stack Development</a></li>
                                 <li><a href="/Home/Courses?course=Database Designing" class="link-page">Database Designing</a></li>
                             </ul>
                         </li>
-                        <li><a href="/Home/ContactUs" class="main-menu">Contact Us</a></li>
-                        <li><a href="/Home/AboutUs" class="main-menu">About Us</a></li>
-                        <li><a href="/Home/RealTimeAttacks" class="main-menu">Real-time Attacks</a></li>
+                        <li style="max-height: 20px;"><a href="/Home/ContactUs" class="main-menu">Contact Us</a></li>
+                        <li style="max-height: 20px;"><a href="/Home/AboutUs" class="main-menu">About Us</a></li>
+                        <li style="max-height: 20px;"><a href="/Home/RealTimeAttacks" class="main-menu">Real-time Attacks</a></li>
                     </ul>
                 </nav>
             </div>
@@ -108,16 +115,14 @@
                     <div class="col-2">
                         <div class="col-md-3 col-sm-6 col-xs-6 sd380">
                             <div class="edugate-widget widget">
-                                <div class="title-widget">EDUGATE</div>
-                                <div class="content-widget"><p>Edugate is a great start for an education personnel or organization to start the online business with 1 Click.</p>
+                                <div class="title-widget">ECDI</div>
+                                <div class="content-widget"><p>Expert Cyber Defence Intelligence is a great start for an education personnel or organization.</p>
 
                                     <div class="info-list">
                                         <ul class="list-unstyled">
-                                            <li><i class="fa fa-envelope-o"></i><a href="#">hello@edugate.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a href="#">P: 3333 222 1111</a></li>
-                                            <li><i class="fa fa-map-marker"></i><a href="#"><p>99 Barnard St - Suite 111</p>
-
-                                                <p>United States - GA 22222</p></a></li>
+                                            <li><i class="fa fa-envelope-o"></i><a href="#">Management@ecditech.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a href="#">+93 78 807 7685</a></li>
+                                            <li><i class="fa fa-map-marker"></i><a href="#"><p>Pul-e-Surkh Rd, Kabul, Afghanistan</p></a></li>
                                         </ul>
                                     </div>
                                 </div>
